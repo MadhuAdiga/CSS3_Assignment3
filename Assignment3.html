@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Session 4: CSS3
+			Assignment – CSS3 Animation using transition
+		</title>
+
+		<style>
+
+		@keyframes box { /* keyframes animation to specify the start and styling */
+    	from {background-color: green; border-radius:0px;}
+    	to {background-color: orange; border-radius:100px;}
+}
+			div {
+				display: table;
+				height:80px;
+				width: 80px;
+				margin: 0 auto;
+				background-color: green;
+				text-align: center;
+				animation-name: box;
+    			animation-duration: 8s; /* can be increased to slower the transition */
+    			animation-iteration-count: infinite; /* to run the animation on an infinite loop */
+
+			}
+
+			p { /* paragraph styling to align it at the center of the div */
+				color: white;
+				display:table-cell;
+				vertical-align:middle;
+
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p>Box</p>
+		</div>
+	</body>
+
+</html>
